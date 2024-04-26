@@ -1,0 +1,94 @@
+/* Styles for the service title */
+.serviceTitle {
+    margin-bottom: 50px;
+    margin-left: 150px;
+}
+
+.serviceTitle h1 {
+    font-size: 72px; /* Adjusted font size */
+    margin-bottom: 10px;
+    color: black;
+    padding-top: 50px;
+}
+
+.serviceTitle p {
+    font-size: 24px; /* Adjusted font size */
+    color: #888;
+    line-height: 1.4;
+}
+
+/* Styles for left alignment */
+.leftAlign {
+    text-align: left;
+}
+
+/* Styles for the row div */
+.row {
+    display: flex;
+    justify-content: center; /* Align items horizontally */
+    margin-bottom: 20px; /*Adjust the spacing between rows*/
+}
+
+/* Styles for the card container divs */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px 20px #f9f9f9;
+    padding: 40px;
+    margin: 20px; /* Adjust the spacing between cards */
+    max-width: 400px; /* Limit the width of each card */
+    text-align: center;
+}
+
+/* Styles for the heading */
+.heading {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 700;
+    border-bottom: 3px solid red;
+    box-shadow: 0px 5px 5px -5px red;
+}
+
+/* Styles for the paragraph */
+.paragraph {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Styles for the service title */
+.service {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Styles for the list items */
+.listItem {
+    color: #888;
+    margin-bottom: 5px;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    .serviceTitle {
+        margin-left: 5px; /* Reset the left margin for smaller screens */
+    }
+
+    .serviceTitle h1{
+        font-size: 50px;
+        padding-left: 10px;
+    }
+    .serviceTitle p {
+        font-size: 20px;
+        padding-left: 10px;
+    }
+    .card {
+        max-width: none; /* Remove the max-width for cards on smaller screens */
+    }
+
+    .row {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+    }
+
+ 
+}

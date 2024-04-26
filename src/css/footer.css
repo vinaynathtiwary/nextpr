@@ -1,0 +1,191 @@
+/* Footer */
+
+/* Newsletter Subtitle */
+.newsletterSubtitle,
+.contactSubtitle {
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 0; /* Added top margin */
+}
+
+.footerStyle {
+    background-color: #f8f9fa;
+    width: auto;
+    padding: 40px 20px;
+    color: #000000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    height: auto; /* Adjusted height */
+}
+
+/* Footer Content */
+.footerContent {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* Newsletter */
+.newsletterStyle {
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 20px;
+    transition: all 0.3s ease; /* Added transition */
+}
+
+/* Newsletter Subtitle */
+.newsletterSubtitle {
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Newsletter Form */
+.newsletterForm {
+    display: flex;
+    flex-direction: center;
+    align-items: flex-start;
+}
+
+/* Input Container */
+.inputContainer {
+    margin-bottom: 20px;
+}
+
+/* Input Label */
+.inputLabel {
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+/* Input Email */
+.inputEmail {
+   
+    width: 100%;
+}
+
+/* Submit Button */
+.submitButton {
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: #000000;
+    border: 2px solid #000000;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    max-width: 150px;
+}
+
+.submitButton:hover {
+    background-color: #000000;
+    color: #ccc;
+}
+
+/* Contact */
+.contactStyle {
+    margin-bottom: 20px;
+    width: 500px;
+}
+
+/* Contact */
+.contactStyle {
+    padding-top: 30px;
+    margin-bottom: 20px;
+    width: 400px;
+}
+
+/* Contact Paragraph */
+.contactParagraph {
+    display: flex; /* Display as flex container */
+    align-items: center; /* Align items vertically */
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
+/* Contact Image */
+.contactImage {
+    margin-right: 5px; /* Add some spacing between image and text */
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Footer Bottom */
+.footerBottom {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Social Media */
+.socialMediaStyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    max-width: 300px;
+}
+
+/* Social Media Icon */
+.socialMediaIcon {
+    display: flex;
+}
+
+.socialIconStyle {
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.socialIconStyle:hover {
+    transform: scale(1.2);
+}
+
+/* Copyright */
+.copyrightStyle {
+    margin-bottom: 20px;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+    .footerStyle{
+        height: auto; /* Adjusted height */
+    }
+    
+    .footerContent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsletterStyle {
+        width: 80%;
+        left: 0;
+        margin-left: 0px;
+        padding-left: 0;
+    }
+
+    .inputContainer,
+    .contactStyle {
+        max-width: 100%;
+    }
+
+    .socialMediaStyle {
+        max-width: 100%;
+    }
+    .inputEmail{
+        left: 0px;
+        width: 80%;
+    }
+
+}

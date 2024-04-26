@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+/* Define your main styles outside the media query */
+.mainSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+}
+
+.brand-container,
+.passion-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.waviy {
+  position: relative;
+  font-size: 90px;
+}
+
+.waviy span {
+  font-family: 'Alfa Slab One', cursive;
+  display: inline-block;
+  color: #ffffff;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+}
+
+.brand-container .waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+}
+
+.passion-container .waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+}
+
+.swipeButton {
+  position: absolute;
+  bottom: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  background-color: #ffffff;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 100px;
+  width: 100px;
+  border-radius: 51% 49% 43% 57% / 27% 25% 75% 73% ;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes waviy {
+  0%, 40%, 100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Apply media query */
+@media (max-width: 768px) {
+  /* Adjust styles for screens smaller than 768px */
+  .brand-container,
+  .passion-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .brand-container {
+    order: -1; /* Move the brand container to the top */
+  }
+
+  .brand-container .waviy,
+  .passion-container .waviy {
+    font-size: 40px; /* Adjust font size */
+  }
+}
