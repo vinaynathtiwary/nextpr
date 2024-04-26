@@ -72,7 +72,7 @@ const Home = () => {
   return (
     <div className='carouselMain'>
       <div>
-        <h1 style={{color: 'black'}}>OUR WORKS</h1>
+        <h1 style={{color: 'black' , fontSize: '32px'}}>OUR WORKS</h1>
       </div>
       <section id="about">
       <div className="containerStyle">
